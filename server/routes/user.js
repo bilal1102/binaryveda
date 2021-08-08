@@ -14,11 +14,5 @@ router.get("/test", (req, res) => {
   res.end()
 });
 
-// test('add data', async function () {
-//   const res = await request(app)
-//     .post('/admin/addOrganizationFacility')
-//     .send(organizationFacilityLog.organizationFacilityValue)
-//   assert.equal(res.status, 200);
-// });
 
   module.exports=router;

@@ -32,35 +32,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 })
 .use("/api", require('./routes/user'))
 
-
-// simple route
-// app.get("/", (req, res) => {
-//   res.json({ message: "Welcome to Binaryveda application.Home" });
-//   res.end()
-// });
-
-// router.post("/hello",(req,res)=>{
-//   console.log('test');
-//   res.json({message:"hello"})
-//   res.end()
-// })
-
-// Login route
-// router.post("/login", (req, res) => {
-//     res.json({ message: "Login" });
-//   });
-
-// // signup route
-// router.post("/singup", (req, res) => {
-//     console.log('hello')
-//     res.json({ message: "Signup" });
-//   });
-
-// // user route
-// app.get("user/id", (req, res) => {
-//     res.json({ message: "Welcome to Binaryveda application." });
-//   });
-
 // set port, listen for requests
 const PORT = process.env.PORT || 5555;
 app.listen(PORT, () => {
