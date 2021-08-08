@@ -10,7 +10,11 @@ const getUser = async function(id){
 }
 
 const login = async function(body){
-    //
+    console.log('body',body)
+    let info = await model.findOne({email:body.email, password:body.password})
+    console.log(info)
+    return info;
+
 }
 
 module.exports = {

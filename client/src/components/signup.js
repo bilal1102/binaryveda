@@ -15,7 +15,6 @@ export default class SignUp extends Component {
     // this.newUser = this.newUser.bind(this);
 
     this.state = {
-      id: null,
       email: "",
       firstName: "",
       lastName: "",
@@ -81,16 +80,6 @@ export default class SignUp extends Component {
       });
   }
 
-//   newUser() {
-//     this.setState({
-//       id: null,
-//       email: "",
-//       firstName: "",
-//       lastName: "",
-//       password: "",
-//       confirmPassword:""
-//     });
-//   }
 
   render() {
     return (

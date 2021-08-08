@@ -16,8 +16,14 @@ const signUp = async function(request,response){
 //login 
 const login= async function (request, response) {
     try {
+        
+        console.log('in controller')
         const record = await dao.login(request.body);
-        return response.status(200).json(record);
+        if(record){
+            return response.status(200).json({ message: 'LogedIn Successfully', data: record });
+        }else{
+            return response.status(200).json({ message: 'Invalid Cridentials', data: record });
+        }
 
     } catch (err) {
         return response.status(500).json({  message: 'Internal Server Error' });
